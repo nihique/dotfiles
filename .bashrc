@@ -148,7 +148,7 @@ if [[ -n "$PS1" ]]; then
 
 fi
 
-export PATH=$HOME/local/bin:$PATH:$HOME/bin 
+export PATH=$HOME/local/bin:$HOME/local/sbin:$PATH
 
 # This loads RVM into a shell session.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  
