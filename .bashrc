@@ -129,6 +129,7 @@ if [[ -n "$PS1" ]]; then
 
 	[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 
+    # aliases
 	alias gb='git branch'
 	alias gc='git commit -v'
 	alias gca='git commit -a -v'
@@ -142,6 +143,9 @@ if [[ -n "$PS1" ]]; then
 	alias gst='git status'
 	alias gap='git add -p'
 	alias glg='git log --pretty=oneline --abbrev-commit'
+    alias ngx='sudo /etc/init.d/nginx'
+
+    # git completion
 	export GIT_PS1_SHOWDIRTYSTATE=1
 	export GIT_PS1_SHOWSTASHSTATE=1
 	source ~/.git-completion.sh
